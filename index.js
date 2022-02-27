@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 app.engine('handlebars',exphbs.engine());
 app.set('view engine', 'handlebars');
 
-const mama  = "mama";
+const test2  = "test2";
 //set handle
 app.get('/', function (req,res){
 	res.render('home',{
