@@ -1,2 +1,36 @@
-<h1> this is my handelbars page </h1>
-<p> {{{stuff}}}</p>
+{{#if error}}
+   Oops! an error occured..
+{{/if}}
+
+
+<div class="jumbotron">
+  <h1 class="display-4">{{ stock.companyName }} ({{ stock.symbol }})</h1>
+  <p class="lead"><strong>LatestPrice: </strong>$ {{ stock.latestPrice }} <br/>
+<strong> Open : </strong>${{stock.open}} <br/>
+<strong>Change : </strong>{{ stock.change}}% <br/>
+<strong>MarketCap : </strong>$ {{ stock.marketCap  }} <br/>
+<strong>P/E Ratio :</strong> {{ stock.peRatio  }} <br/>
+<strong>YTD Change : </strong>{{ stock.ytdChange }}% <br/>
+<strong>52 Week Low :</strong>${{ stock.week52Low }} <br/>
+<strong>52 Week High :</strong>${{ stock.week52High}} <br/>
+<strong>Primary Exchange :</strong>{{ stock.primaryExchange }} <br/>
+  </p>
+</div>
+
+<style>
+
+
+.jumbotron {
+ 
+  padding: 2rem 1rem;
+ 
+  margin-bottom: 2rem;
+ 
+  
+  background:#A8A8A8;
+ 
+  border-radius: 0.3rem;
+ 
+
+
+</style>
